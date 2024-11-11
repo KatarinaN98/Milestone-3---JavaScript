@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray for a soft background */
+}
+
+/* Header Styles */
+header {
+    background-color: #C3ADDF; /* Deep Purple */
+    color: #ffffff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+header .logo img {
+    width: 250px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #dcd4ff; /* Light Lavender */
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.site--hero {
+    background-color: #76a9ff; /* Soft Blue */
+    background-position: center;
+    color: #ffffff;
+    font-size: 48px;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Sorting Dropdown Styles */
+.products--sorting {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: center;
+}
+
+.products--sorting label {
+    font-size: 18px;
+    color: #5c3a92; /* Deep Purple */
+    margin-right: 10px;
+}
+
+.sort--dropdown {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #f1e8ff; /* Very Light Lavender */
+    color: #5c3a92;
+}
+
+/* Product Section */
+.products-section {
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.products--list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Product Card */
+.product.card {
+    padding: 20px;
+    background-color: #ffffff; /* White for a clean look */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 250px;
+}
+
+.product.card:hover {
+    transform: scale(1.05);
+    background-color: #f8d7e4; /* Warm Pink on hover */
+}
+
+.product--image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product--name {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #5c3a92; /* Deep Purple for product names */
+}
+
+.product--description {
+    font-size: 16px;
+    color: #555555; /* Dark gray for readable text */
+}
+
+.product--price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #76a9ff; /* Soft Blue for price highlight */
+}
+
+.product--details,
+.product--buy {
+    background-color: #5c3a92; /* Deep Purple */
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.product--details:hover,
+.product--buy:hover {
+    background-color: #764ecf; /* Slightly brighter purple on hover */
+}
+
+/* Cart Modal Styles */
+.modal-cart {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s ease;
+}
+
+.modal-cart.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-cart-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.modal-cart-close {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+/* Checkout Button */
+.checkout-button {
+    background-color: #5c3a92; /* Deep Purple */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.checkout-button:hover {
+    background-color: #764ecf;
+}
+
+/* Accepted Payments */
+.accepted-payments {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.accepted-payments i {
+    font-size: 24px;
+    color: #5c3a92;
+}
+
+/* Confirmation Message */
+.confirmation-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #76a9ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    animation: fade-in-out 3s ease forwards;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Footer */
+footer {
+    background-color: #5c3a92;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-left p {
+    color: #dcd4ff; /* Light Lavender */
+    margin: 0;
+    font-size: 16px;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #dcd4ff; /* Light Lavender for social icons */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f8d7e4; /* Warm Pink on hover */
+    transform: scale(1.1);
+}
+
+.footer-right a {
+    color: #dcd4ff; /* Light Lavender */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .social-links,
+    .footer-right {
+        margin-top: 10px;
+    }
+}
+
+
