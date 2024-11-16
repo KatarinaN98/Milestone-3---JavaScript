@@ -1,6 +1,6 @@
 JS - E-commerce Project with JavaScript Integration
 
-E-commerce site with generating DOM elements, sorting products, adding products to the cart and search bar.
+##E-commerce site with generating DOM elements, sorting products, adding products to the cart and search bar.
 
 <img width="573" alt="Screenshot 2024-11-16 at 18 54 47" src="https://github.com/user-attachments/assets/2c14b9f3-55d4-4ff8-b45c-930482d1cd47">
 
@@ -26,10 +26,10 @@ Searching products by name.
 
 
 Deliverables:
-Generating DOM elements
-JavaScript arrays
-Sorting methods
-DOM manipulation
-Adding products to the Cart
-Event handling
+Generating DOM elements,
+JavaScript arrays,
+Sorting methods,
+DOM manipulation,
+Adding products to the Cart,
+Event handling,
 Search functionality
